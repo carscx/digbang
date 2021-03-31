@@ -47,6 +47,9 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 50px 30px;
+    @include for-phone-only {
+      flex-direction: column;
+    }
     button {
       border-radius: 0;
       border: 0;
@@ -54,6 +57,10 @@
       text-transform: uppercase;
       padding: 8px 20px;
       font-weight: 600;
+      @include for-phone-only {
+        margin: 5px 0;
+        width: 100%;
+      }
       &.btn-default {
         background-color: $btn-default-bg;
         font-size: 18px;
@@ -63,6 +70,10 @@
         font-size: 24px;
         margin-right: 10px;
         width: 70%;
+        @include for-phone-only {
+          margin-right: 0;
+          width: 100%;
+        }
       }
       &:hover {
         cursor: pointer;
