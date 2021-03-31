@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  background: $main-bg;
+  font-family: $family-font;
+  color: $color-font;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}

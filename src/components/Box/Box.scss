@@ -1,0 +1,72 @@
+.box {
+  background: $box-bg;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 0;
+  min-height: 24em;
+  width: 600px;
+  @include for-phone-only {
+    width: 100%;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    h1 {
+      font-size: 36px;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  .container {
+    padding: 0 50px;
+  }
+  .box-cuota {
+    display: flex;
+    margin: 30px 50px 0;
+    padding: 10px;
+    background: $featured-bg;
+    p {
+      align-items: center;
+      display: flex;
+      font-size: 24px;
+      font-weight: 600;
+      justify-content: space-between;
+      text-transform: uppercase;
+      width: 100%;
+      span {
+        font-size: 32px;
+      }
+    }
+  }
+  .box-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px 30px;
+    button {
+      border-radius: 0;
+      border: 0;
+      color: $color-font;
+      text-transform: uppercase;
+      padding: 8px 20px;
+      font-weight: 600;
+      &.btn-default {
+        background-color: $btn-default-bg;
+        font-size: 18px;
+      }
+      &.btn-primary {
+        background-color: $btn-primary-bg;
+        font-size: 24px;
+        margin-right: 10px;
+        width: 70%;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
